@@ -8,10 +8,21 @@
  * Controller of the corlateApp
  */
 angular.module('corlateApp')
-  .controller('BlogCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('BlogCtrl', function ($scope) {
+
+   $scope.buscar=function(){
+   	/*alert ($scope.busqueda)*/
+   	if ($scope.busqueda==undefined) {
+   		alert('tienes que escribir algo');
+   	}
+
+	else { 
+
+		alert($scope.busqueda);
+
+	}	
+   	
+   }
+   
+    
   });
